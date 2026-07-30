@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meus Filmes Favoritos</h1>
+    </header>
+
+    <main>
+
+        <p>
+            Eu gosto de assistir filmes porque eles divertem e ensinam coisas novas.
+            Meus gêneros favoritos são ação, aventura e ficção científica.
+        </p>
+
+        <a href="https://www.adorocinema.com">Site sobre filmes</a>
+
+        <br><br>
+
+        <img src="filme.jpg" alt="Filme" width="250">
+
+        <h2>Filmes Favoritos</h2>
+
+        <table border="1">
+            <tr>
+                <th>Filme</th>
+                <th>Ano</th>
+            </tr>
+
+            <tr>
+                <td>Homem-Aranha</td>
+                <td>2021</td>
+            </tr>
+
+            <tr>
+                <td>Jurassic World</td>
+                <td>2022</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>Atividade de HTML - manu e duda</p>
+    </footer>
+
+</body>
+
+</html>
