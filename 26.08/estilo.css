@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Comic+Neue&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Playfair+Display&family=Roboto&family=Rye&display=swap');
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(circle at top, #252525, #080808 70%);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: linear-gradient(135deg, #050505, #202020, #050505);
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 3px solid #e50914;
+    box-shadow: 0 5px 20px #000;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 55px;
+    letter-spacing: 4px;
+}
+
+header h1::first-letter {
+    color: #e50914;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+main {
+    padding: 40px;
+}
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* =========================
+   CARTA PADRÃO
+========================= */
+
+.carta {
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px #000b;
+    transition: 0.4s;
+    border: 2px solid;
+}
+
+.carta:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 35px #000;
+}
+
+.carta img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.carta h2 {
+    margin: 5px 0 10px;
+    font-size: 30px;
+}
+
+.carta h3 {
+    font-size: 15px;
+    margin: 10px 0;
+    opacity: 0.9;
+}
+
+.carta p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 70px;
+}
+
+.carta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.carta a:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+}
+
+
+/* =========================
+   🚀 INTERESTELAR
+   AZUL
+========================= */
+
+.interestelar {
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(180deg, #06152d, #0b2547);
+    color: #64b5f6;
+    border-color: #2196f3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.interestelar img {
+    height: 250px;
+}
+
+.interestelar h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+}
+
+.interestelar a {
+    background: #1976d2;
+}
+
+
+/* =========================
+   🎩 O PODEROSO CHEFÃO
+   DOURADO
+========================= */
+
+.chefao {
+    width: 85%;
+    min-height: 430px;
+    background: #0b0906;
+    color: #d4af37;
+    border-color: #d4af37;
+    font-family: 'Rye', serif;
+}
+
+.chefao img {
+    height: 190px;
+}
+
+.chefao h2 {
+    font-family: 'Rye', serif;
+    font-size: 26px;
+}
+
+.chefao a {
+    background: #8d6e16;
+}
+
+
+/* =========================
+   🃏 CORINGA
+   ROXO
+========================= */
+
+.coringa {
+    width: 92%;
+    min-height: 410px;
+    background: linear-gradient(160deg, #160018, #39003e);
+    color: #f062c0;
+    border-color: #e91e9a;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.coringa img {
+    height: 220px;
+}
+
+.coringa h2 {
+    font-size: 28px;
+}
+
+.coringa a {
+    background: #c2188b;
+}
+
+
+/* =========================
+   🦸 VINGADORES
+   AZUL/ROXO
+========================= */
+
+.vingadores {
+    width: 90%;
+    min-height: 450px;
+    background: linear-gradient(145deg, #0d0925, #21115c);
+    color: #8c9eff;
+    border-color: #673ab7;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.vingadores img {
+    height: 210px;
+}
+
+.vingadores p {
+    font-family: Arial, sans-serif;
+}
+
+.vingadores a {
+    background: #512da8;
+}
+
+
+/* =========================
+   🍫 FORREST GUMP
+   VERMELHO
+========================= */
+
+.forrest {
+    width: 100%;
+    min-height: 380px;
+    background: #f4ead5;
+    color: #8b1e1e;
+    border-color: #c62828;
+    font-family: 'Playfair Display', serif;
+}
+
+.forrest img {
+    height: 180px;
+}
+
+.forrest p {
+    color: #4e342e;
+}
+
+.forrest a {
+    background: #b71c1c;
+}
+
+
+/* =========================
+   🌀 A ORIGEM
+   CIANO
+========================= */
+
+.origem {
+    width: 95%;
+    min-height: 470px;
+    background: linear-gradient(160deg, #00151c, #003845);
+    color: #00e5ff;
+    border-color: #00acc1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.origem img {
+    height: 240px;
+}
+
+.origem h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+}
+
+.origem a {
+    background: #008ba3;
+}
+
+
+/* =========================
+   💍 SENHOR DOS ANÉIS
+   VERDE/DOURADO
+========================= */
+
+.aneis {
+    width: 88%;
+    min-height: 440px;
+    background: linear-gradient(160deg, #151205, #3b3205);
+    color: #f1c40f;
+    border-color: #c9a227;
+    font-family: 'Caveat', cursive;
+}
+
+.aneis img {
+    height: 205px;
+}
+
+.aneis h2 {
+    font-size: 35px;
+}
+
+.aneis p {
+    font-size: 19px;
+}
+
+.aneis a {
+    background: #9b7b08;
+}
+
+
+/* =========================
+   ⚡ HARRY POTTER
+   AZUL
+========================= */
+
+.harry {
+    width: 82%;
+    min-height: 400px;
+    background: linear-gradient(145deg, #07152d, #132d57);
+    color: #90caf9;
+    border-color: #1565c0;
+    font-family: 'Lobster', cursive;
+}
+
+.harry img {
+    height: 175px;
+}
+
+.harry h2 {
+    font-size: 32px;
+}
+
+.harry a {
+    background: #1565c0;
+}
+
+
+/* =========================
+   🚗 DE VOLTA PARA O FUTURO
+   LARANJA
+========================= */
+
+.futuro {
+    width: 100%;
+    min-height: 430px;
+    background: linear-gradient(150deg, #261000, #512000);
+    color: #ff9800;
+    border-color: #ff6d00;
+    font-family: 'Comic Neue', cursive;
+}
+
+.futuro img {
+    height: 225px;
+}
+
+.futuro h2 {
+    font-size: 29px;
+}
+
+.futuro a {
+    background: #e65100;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    margin-top: 30px;
+    padding: 25px;
+    background: #080808;
+    border-top: 2px solid #e50914;
+    text-align: center;
+    color: #bbb;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .cartas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carta {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .cartas {
+        grid-template-columns: 1fr;
+    }
+
+    .carta {
+        width: 100%;
+    }
+
+    .carta img {
+        height: 220px;
+    }
+
+}
